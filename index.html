@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DM – Digital Marketing Courses & Blog</title>
+  <meta name="description" content="DM offers practical digital marketing courses and a blog to guide learners and marketers. Discover SEO, social media marketing, content strategies, and more!" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      padding-top: 70px;
+      color: #333;
+      transition: background-color 0.4s ease;
+    }
+
+    .logo-icon {
+      background: linear-gradient(45deg, #00B4D8, #48CAE4);
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .logo-text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #003049;
+      letter-spacing: -1px;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+      color: #003049 !important;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #00B4D8 !important;
+    }
+
+    .hero-section {
+      background: #003049;
+      color: #ffffff;
+      padding: 60px 0;
+    }
+
+    .hero-section h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      transition: transform 0.3s ease;
+    }
+
+    @media (min-width: 768px) {
+      .hero-section h1 {
+        font-size: 2.8rem;
+      }
+      .hero-section {
+        padding: 80px 0;
+      }
+    }
+
+    .hero-section h1:hover {
+      transform: scale(1.03);
+    }
+
+    .hero-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      background-color: #00B4D8;
+      border: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #48CAE4;
+      transform: translateY(-2px);
+    }
+
+    .text-muted-section {
+      background-color: #f5f3f0;
+      padding: 40px 0;
+    }
+
+    img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 100%;
+      height: auto;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #001D3D;
+      color: #ffffff;
+    }
+    
+    /* Social media section */
+    .icon-box {
+      padding: 20px;
+      margin-bottom: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    
+    .icon-box img {
+      max-height: 200px;
+      width: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    .icon-box i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #00B4D8;
+    }
+    
+    .page-header {
+      padding: 60px 0;
+      background: linear-gradient(135deg, #48CAE4, #00B4D8);
+      color: white;
+    }
+    
+    .tool-card {
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .hero {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #003049, #001D3D);
+      color: white;
+    }
+    
+    .section {
+      padding: 60px 0;
+    }
+    
+    @media (max-width: 767px) {
+      .hero-section h1 {
+        font-size: 1.8rem;
+      }
+      .page-header, .hero {
+        padding: 40px 0;
+      }
+      .section {
+        padding: 40px 0;
+      }
+      .icon-box {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="dmcourselogo.png" height="80px" width="80px">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="explore.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#social-media">Social Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tools-resource">Tools & Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#coursesModal">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#aboutdm">About DM</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+  <div class="container mt-4">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-1 order-2">
+        <h1>Welcome to DMCOURSE – Your Digital Marketing Guide</h1>
+        <p class="fs-5 lh-base">
+          DM is your go-to platform to <strong>learn, explore, and master digital marketing</strong>. Whether you're a beginner or upskilling, our blog and courses offer the insights you need.
+        </p>
+        <ul class="fs-5">
+          <li>Hands-on SEO, Social Media & Analytics</li>
+          <li>Real-world strategies from industry experts</li>
+          <li>Boost your career with DM Certification</li>
+        </ul>
+        <a href="explore.html" class="btn btn-primary btn-lg mt-3">Explore Our Blog</a>
+      </div>
+      <div class="col-md-6 text-center order-md-2 order-1 mb-4 mb-md-0">
+        <img src="top.jpeg" class="img-fluid rounded shadow" alt="DM - Digital Marketing Illustration" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Info Section -->
+<section class="text-muted-section">
+  <div class="container text-center">
+    <h2 class="mb-3">Why Learn with DM?</h2>
+    <p class="lead">DM empowers individuals and businesses to succeed in a fast-changing digital world. Stay relevant, visible, and effective with our curated content.</p>
+  </div>
+</section>
+
+<!-- Courses Modal -->
+<div class="modal fade" id="coursesModal" tabindex="-1" aria-labelledby="coursesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="coursesModalLabel">Our Digital Marketing & Design Courses</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="master.jpg" alt="Digital Marketing Masterclass" class="img-fluid" />
+                <h5 class="mt-3">Digital Marketing Masterclass</h5>
+                <p>A complete guide to SEO, SEM, social media, content marketing, and email campaigns.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="serach.jpg" alt="SEO & Google Analytics" class="img-fluid" />
+                <h5 class="mt-3">SEO & Google Analytics</h5>
+                <p>Understand how to rank on Google and track website traffic using advanced tools.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="sociall.jpg" alt="Social Media Strategies" class="img-fluid" />
+                <h5 class="mt-3">Social Media Strategies</h5>
+                <p>Learn platform-specific strategies and how to grow engagement and ROI on social platforms.</p>
+              </div>
+ 
+             </div>
+          <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="grap.avif" alt="Graphic Design Essentials" class="img-fluid" />
+                <h5 class="mt-3">Graphic Design Essentials</h5>
+                <p>Learn graphic design fundamentals using tools like Photoshop, Illustrator, and InDesign.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="website.jpg" alt="Web Design Mastery" class="img-fluid" />
+                <h5 class="mt-3">Web Design Mastery</h5>
+                <p>Understand web design principles and create responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="course-card text-center h-100">
+                <img src="help.jpg" alt="Data Analytics Essentials" class="img-fluid" />
+                <h5 class="mt-3">Data Analytics Essentials</h5>
+                <p>Learn how to collect, process, and analyze data to make informed business decisions using tools like Excel and Power BI.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="social-media">
+<!-- Header Section -->
+<header class="page-header text-center">
+  <div class="container">
+    <h1 class="display-5">Master Social Media Marketing</h1>
+    <p class="lead">From content creation to analytics – everything you need to grow your brand online.</p>
+  </div>
+</header>
+
+<!-- Content Section -->
+<section class="section-content py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="17.webp" class="img-fluid" alt="Meta Business Suite">
+          <h4>Meta Business Suite</h4>
+          <p>Discover unique strategies for Instagram, Facebook, LinkedIn, Twitter, and YouTube to increase visibility and engagement.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="2233.webp" class="img-fluid" alt="Engagement">
+          <h4>Engagement</h4>
+          <p>Learn how to plan, schedule, and design engaging posts that resonate with your audience using calendar tools and templates.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="19.webp" class="img-fluid" alt="Events">
+          <h4>Events</h4>
+          <p>Events digital marketing is the strategic use of online tools and platforms to promote and manage events, aiming to engage audiences, build anticipation, and ultimately drive attendance</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="lead.WEBP" class="img-fluid" alt="Lead Generation">
+          <h4>Lead Generation</h4>
+          <p>In digital marketing, lead generation is the process of identifying and attracting potential customers, typically online, and converting their interest into a lead, which is a prospect who has expressed an interest in a business's product or service</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="adve.jpg" class="img-fluid" alt="Marketing And Advertisement">
+          <h4>Marketing And Advertisement</h4>
+          <p>Marketing encompasses the broader strategy of understanding customer needs and creating value, while advertising is a specific tactical method used within that strategy to promote products or services through paid channels.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="Content.jpg" class="img-fluid" alt="Content Performance">
+          <h4>Content Performance</h4>
+          <p>Performance marketing is a digital marketing strategy where advertisers pay only for measurable results like clicks, leads, or sales, focusing on driving tangible outcomes and RO.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="brand.png" class="img-fluid" alt="Brand Awareness">
+          <h4>Brand Awareness</h4>
+          <p>In digital marketing, brand awareness refers to how familiar customers are with a brand and its products, including their ability to recognize and recall the brand.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="mobile.png" class="img-fluid" alt="Gross-App-Management">
+          <h4>Gross-App-Management</h4>
+          <p>Gross-App-Management (GAM) in digital marketing refers to the strategic process of maximizing the number of app downloads and user engagement within a mobile app, often through various digital marketing techniques.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="ff.jpg" class="img-fluid" alt="App Installs">
+          <h4>App Installs</h4>
+          <p>In digital marketing, app installs refer to a user successfully downloading and opening a mobile application for the first time.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="images (1).png" class="img-fluid" alt="Video Views">
+          <h4>Video Views</h4>
+          <p>In digital marketing, video views represent the number of times a video is played or watched.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="1.jpeg" class="img-fluid" alt="Reach">
+          <h4>Reach</h4>
+          <p>In digital marketing, reach refers to the number of unique individuals who have seen your content, such as a social media post, ad, or website content, at least once.</p>
+        </div>
+      </div>
+       <div class="col-md-4 col-sm-6">
+        <div class="icon-box text-center">
+          <img src="images22.jpeg" class="img-fluid" alt="Catalogue Sales">
+          <h4>Catalogue Sales</h4>
+          <p>In digital marketing, "Catalogue Sales" refers to a sales strategy where businesses use a product catalogue, whether printed or digital, to showcase and sell their products or services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media Platforms with Icons -->
+<section class="section-content bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Popular Social Media Platforms</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fab fa-instagram"></i>
+          <h5>Instagram</h5>
+          <p>Share visual stories, reels, and engage audiences with creative visuals and influencer content.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fab fa-facebook"></i>
+          <h5>Facebook</h5>
+          <p>Build communities, run targeted ads, and connect with a broad age group audience.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fab fa-linkedin"></i>
+          <h5>LinkedIn</h5>
+          <p>Professional platform for B2B marketing, job seekers, and personal branding.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fab fa-youtube"></i>
+          <h5>YouTube</h5>
+          <p>Educational content, entertainment, long-form videos, vlogs, and product reviews.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+</section>
+
+<section id="tools-resource">
+<!-- Page Header -->
+<header class="page-header text-center">
+  <div class="container">
+   <h1>Graphic Design Tools</h1>
+    <p class="lead">Essential tools for every designer — from Adobe powerhouses to Corel creativity</p>
+      </div>
+</header>
+
+<!-- Tool Cards -->
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Photoshop -->
+    <div class="col-md-6 col-lg-4">
+      <div class="tool-card card h-100 text-center p-3">
+        <img src="photo.jpeg" alt="Photoshop" class="img-fluid rounded mb-3">
+        <h5>Adobe Photoshop</h5>
+        <p>Industry-standard image editing tool for photo manipulation, web graphics, and more.</p>
+      </div>
+    </div>
+
+    <!-- Illustrator -->
+    <div class="col-md-6 col-lg-4">
+      <div class="tool-card card h-100 text-center p-3">
+        <img src="adop.webp" alt="Illustrator" class="img-fluid rounded mb-3">
+        <h5>Adobe Illustrator</h5>
+        <p>Create logos, vector graphics, and scalable designs with Illustrator's powerful toolset.</p>
+      </div>
+    </div>
+
+    <!-- InDesign -->
+    <div class="col-md-6 col-lg-4">
+      <div class="tool-card card h-100 text-center p-3">
+        <img src="in.webp" alt="InDesign" class="img-fluid rounded mb-3">
+        <h5>Adobe InDesign</h5>
+        <p>Professional layout and page design software used for magazines, brochures, and books.</p>
+      </div>
+    </div>
+
+    <!-- CorelDRAW -->
+    <div class="col-md-6 col-lg-4">
+      <div class="tool-card card h-100 text-center p-3">
+        <img src="Coreld.png" alt="CorelDRAW" class="img-fluid rounded mb-3">
+        <h5>CorelDRAW</h5>
+        <p>A versatile graphic design program ideal for vector illustration and layout design.</p>
+      </div>
+    </div>
+
+    <!-- Canva -->
+    <div class="col-md-6 col-lg-4">
+      <div class="tool-card card h-100 text-center p-3">
+        <img src="canva.jpg" alt="Canva" class="img-fluid rounded mb-3">
+        <h5>Canva</h5>
+        <p>User-friendly drag-and-drop tool for creating social media graphics, posters, and presentations.</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<section id="aboutdm">
+<!-- Header Section -->
+<header class="hero text-center">
+  <div class="container">
+   <h1>About DM</h1>
+    <p class="lead mt-3">Your Partner in Practical Digital Marketing Training</p>
+  </div>
+</header>
+
+<!-- About Section -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="company.webp" alt="company" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-3">Who We Are</h2>
+        <p>
+          DM is a dedicated platform that helps students, job seekers, entrepreneurs, and professionals gain hands-on skills in digital marketing. We blend real-world strategies with practical training to prepare you for today's digital-first world.
+        </p>
+        <p>
+          Whether you're new to marketing or looking to upskill, our content and courses are designed to make learning simple, smart, and effective.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="section bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">Why Choose DM?</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fas fa-laptop-code"></i>
+          <h5>Practical Training</h5>
+          <p>Real-life case studies, SEO tools, and campaigns you can actually implement.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fas fa-graduation-cap"></i>
+          <h5>Beginner Friendly</h5>
+          <p>Clear concepts, simple language, and easy explanations – no jargon!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="icon-box">
+          <i class="fas fa-sync-alt"></i>
+          <h5>Updated Content</h5>
+          <p>Stay relevant with the latest industry trends, AI tools, and platform updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision Section -->
+<section class="section">
+  <div class="container text-center">
+    <h2>Our Mission & Vision</h2>
+    <p class="lead mt-3">We aim to make digital marketing knowledge accessible and practical for everyone. Our vision is to build confident marketers and entrepreneurs ready to lead in a digital world.</p>
+  </div>
+</section>
+
+<section id="contact">
+<!-- Header Section -->
+<header class="page-header text-center">
+  <div class="container">
+   <h1>CONTACT US</h1>
+ </div>
+</header>
+
+<!-- Contact Header -->
+<section class="contact-header">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="lead">Have a question or want to learn more? We’d love to hear from you!</p>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h4>Send Us a Message</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+      
+
+        <div class="mt-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5030063261775!2d76.37202167512302!3d10.772733689375796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7d906f4487279%3A0x707096b5a4890b16!2sICS%20India%20Training%20institute%20%7C%20Spoken%20English%20%7C%20Accounting%2C%20Hardware%20%26%20Networking%20%26%20AutoCAD!5e0!3m2!1sen!2sus!4v1744872912151!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-white py-5" style="background-color: #001D3D;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        
+      </div>
+  
+ 
+      <div class="col-lg-4 col-md-4">
+        <h5 class="mb-4">Contact Info</h5>
+        <p class="mb-2"><strong>Email:</strong> dmcourse12@gmail.com</p>
+        <p class="mb-2"><strong>Phone:</strong> +91 8921719746</p>
+        <p><strong>Address:</strong><br>
+          DMcourseottaplam<br>
+          3rd Floor, Megamall,<br>
+          Ottapalam, Kerala - 679101</p>
+          <div class="social-icons mt-2">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      
+
+    </div>
+
+
+    <div class="text-center pt-4 mt-4 border-top border-light">
+      <p class="mb-0">&copy; 2025 DM – Digital Marketing. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+        

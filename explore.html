@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DM Blog – Latest in Digital Marketing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding-top: 70px;
+    }
+
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+      color: #003049 !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #00B4D8 !important;
+    }
+
+    .blog-post {
+      background-color: #0f4363;
+      color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-content {
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      animation: slideIn 0.4s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .modal-header {
+      border-bottom: none;
+      background-color: #003049;
+      color: white;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .modal-body {
+      padding: 2rem;
+    }
+
+    footer {
+      background-color: #001D3D;
+      color: #ffffff;
+    }
+
+    .logo-icon {
+      background: linear-gradient(45deg, #00B4D8, #48CAE4);
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .logo-text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #003049;
+      letter-spacing: -1px;
+    }
+
+    .course-card img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+   <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+  <img src="dmcourselogo.png" height="80px" width="80px">
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#coursesModal">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Blog Content -->
+<div class="container mt-5">
+  <h1 class="text-center mb-5">Our Latest Blog Posts</h1>
+
+  <div class="blog-post">
+    <h3>What is SEO?</h3>
+    <p>Learn the basics of SEO and how to optimize your content for search engines. Understand keywords, backlinks, and on-page SEO.</p>
+    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#seoModal">Read More</button>
+  </div>
+
+  <div class="blog-post">
+    <h3>Social Media Growth Hacks</h3>
+    <p>Discover simple but powerful tactics to boost your social media engagement and grow your followers faster.</p>
+    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#socialModal">Read More</button>
+  </div>
+
+  <div class="blog-post">
+    <h3>Free Tools for Marketers</h3>
+    <p>Here’s a curated list of free tools for SEO, content creation, email marketing, and analytics.</p>
+    <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#toolsModal">Read More</button>
+  </div>
+</div>
+
+<!-- SEO Modal -->
+<div class="modal fade" id="seoModal" tabindex="-1" aria-labelledby="seoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="seoModalLabel">What is SEO?</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Introduction</h4>
+        <p>SEO (Search Engine Optimization) is a strategy used to increase the visibility of a website on search engines like Google and Bing.</p>
+        <h5>Key Elements of SEO:</h5>
+        <ul>
+          <li><strong>Keyword Research:</strong> Finding search terms your audience uses.</li>
+          <li><strong>On-Page Optimization:</strong> Using keywords in titles, headings, and content.</li>
+          <li><strong>Technical SEO:</strong> Site speed, mobile-friendliness, crawlability.</li>
+          <li><strong>Off-Page SEO:</strong> Backlinks and authority building.</li>
+        </ul>
+        <h5>Tips to Improve Your SEO:</h5>
+        <ol>
+          <li>Use short, descriptive URLs.</li>
+          <li>Create high-quality, original content.</li>
+          <li>Optimize images with alt text.</li>
+          <li>Use HTTPS for secure browsing.</li>
+        </ol>
+        <p><strong>Takeaway:</strong> SEO is a long-term investment that improves your visibility and traffic over time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Social Media Modal -->
+<div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="socialModalLabel">Social Media Growth Hacks</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Grow Your Audience</h4>
+        <p>Success on social media comes from smart strategies, not just presence.</p>
+        <h5>Top Tactics:</h5>
+        <ul>
+          <li>Use a content calendar.</li>
+          <li>Promote user-generated content.</li>
+          <li>Partner with influencers.</li>
+          <li>Host live sessions.</li>
+        </ul>
+        <h5>Key Platforms:</h5>
+        <ul>
+          <li><strong>Instagram</strong> – Visual stories & reels</li>
+          <li><strong>LinkedIn</strong> – B2B & professional branding</li>
+          <li><strong>TikTok</strong> – Short, viral video content</li>
+          <li><strong>YouTube</strong> – Long-form educational content</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tools Modal -->
+<div class="modal fade" id="toolsModal" tabindex="-1" aria-labelledby="toolsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="toolsModalLabel">Free Tools for Marketers</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4>Boost Your Workflow with These Tools</h4>
+        <ul>
+          <li><strong>SEO:</strong> Google Keyword Planner, Ubersuggest</li>
+          <li><strong>Design:</strong> Canva, Figma, Adobe Express</li>
+          <li><strong>Email Marketing:</strong> Mailchimp, Moosend</li>
+          <li><strong>Analytics:</strong> Google Analytics, Hotjar</li>
+          <li><strong>AI:</strong> ChatGPT, Copy.ai</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Courses Modal -->
+<div class="modal fade" id="coursesModal" tabindex="-1" aria-labelledby="coursesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="coursesModalLabel">Our Digital Marketing & Design Courses</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <!-- Course Cards -->
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="master.jpg" class="card-img-top" alt="Digital Marketing Masterclass" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Digital Marketing Masterclass</h5>
+                <p class="card-text">All-in-one guide to SEO, SEM, social media, content & email marketing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="serach.jpg" class="card-img-top" alt="SEO & Google Analytics" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">SEO & Google Analytics</h5>
+                <p class="card-text">Learn ranking and tracking with top SEO tools.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="sociall.jpg" class="card-img-top" alt="Social Media Strategies" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Social Media Strategies</h5>
+                <p class="card-text">Boost brand presence with strategic content and engagement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="grap.avif" class="card-img-top" alt="Graphic Design Essentials" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Graphic Design Essentials</h5>
+                <p class="card-text">Learn design using Photoshop, Illustrator & more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="website.jpg" class="card-img-top" alt="Web Design Mastery" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Web Design Mastery</h5>
+                <p class="card-text">Build responsive websites with HTML, CSS & JS.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <img src="help.jpg" class="card-img-top" alt="Data Analytics Essentials" style="height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">Data Analytics Essentials</h5>
+                <p class="card-text">Work with Excel, Power BI & analytical tools for insights.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-0">&copy; 2025 DM – Digital Marketing Blog. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
